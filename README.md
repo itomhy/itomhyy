@@ -1,50 +1,21 @@
-##### 🎶 Music Dan Video Player UserBot 🎶
-### 🤖 Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.
+<p align="center">
+  <img src="https://telegra.ph/file/f08c541ed25816188a910.png" width="200" height="200">
+</p>
 
-## ✨ Didukung Oleh 
-- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
-- [Pyrogram](https://github.com/pyrogram/pyrogram)
+# 𓆩ᴅs𓆪 Tağ Bot
+_**Bu bot, qruplarda `10.000` qədər üzvləri tağ edə bilir. !**_
 
+### Məlumat👇
+Əmrlər | Funksiya
+:--- | :---
+/tag | Üzvləri 5-li tağ edər.
+/emojitag | Üzvləri Emoji ilə tağ edər.
+/cancel | Tağ prosesini dayandırar.
 
-## 📝 Persyaratan
-- Python 3.8+
-- FFMPEG
-- Nodejs v16+
+### Heroku-ya Deployla👇
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/tagbot)
 
-### 🛠 MENU BANTUAN
+### Sahiblə əlaqə👇
+- <a href="https://t.me/ABISHOV_27"><img src="https://img.shields.io/badge/-²⁷ʏᴜsʜᴋᴀ⁰³-0290F7?style=flat-square&amp;labelColor=FFFFFF&amp;logo=Telegram&amp;link=https://t.me/ABISHOV_27" alt="Telegram Badge"></a>
 
-#### ⚡ PERINTAH UNTUK SEMUA ORANG
-- `/play [judul lagu | link youtube | balas file audio]` - untuk memutar lagu
-- `/vplay [judul video | link youtube | balas file video]` - untuk memutar video
-- `/playlist` untuk melihat daftar putar
-- `/ping` - untuk cek status
-- `/help` - untuk melihat daftar perintah
-
-#### ⚡ PERINTAH UNTUK SEMUA ADMIN
-- `/resume` - untuk melanjutkan pemutaran lagu atau video
-- `/pause` - untuk untuk menjeda pemutaran lagu atau video
-- `/skip` - untuk melewati lagu atau video
-- `/end` - untuk mengakhiri pemutaran
-
-### 💡 Deployment
-
-### 💜 Heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/userbot2)
-
-
-### 📚 Variabel Yang Dibutuhkan
-- `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-- `API_HASH` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
-- `SESSION` - Sesi String Pyrogram.Dapatkan String Dari [Sini](https://replit.com/@fjgaming212/StringSession#main.py) Pilih P jangan T
-- `SUDO_USER` - ID Akun Telegram Yang Digunakan Sebagai Admin,pergi ke [@MissRose_Bot](t.me/MissRose_Bot) terus ketik /id
-- `HNDLR` - Handler untuk userbot mu
-
-
-### KREDIT ✨
-- **[Skyzo](https://github.com/ridho17-ind)**
-- **[Tomi](https://github.com/XtomiSN)**
-- **[FlicksSupport](https://t.me/FlicksSupport)**
-- **[Group Music Random](https://t.me/GroupMusicRandom)**
-- **[Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)**
-- **[Laky](https://github.com/Laky-64) For [PyTgCalls](https://github.com/pytgcalls/pytgcalls)**
+**Məni `Github`dan izləməyi unutmayın ✌️**
