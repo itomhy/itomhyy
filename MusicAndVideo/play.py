@@ -279,9 +279,7 @@ async def vplay(client, m: Message):
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
-                await huehue.edit(
-                    "**Axtardığınız videonu tapa bilmədim🥲**"
-                )
+                await huehue.edit("**Axtardığınız videonu tapa bilmədim🥲**")
             else:
                 songname = search[0]
                 url = search[1]
@@ -329,9 +327,7 @@ async def vplay(client, m: Message):
 async def playfrom(client, m: Message):
     chat_id = m.chat.id
     if len(m.command) < 2:
-        await m.reply(
-            f"**İstifadə:** \n\n`{HNDLR}kanal [kanal_id/kanal tağı]`"
-        )
+        await m.reply(f"**İstifadə:** \n\n`{HNDLR}kanal [kanal_id/kanal tağı]`")
     else:
         args = m.text.split(maxsplit=1)[1]
         if ";" in args:

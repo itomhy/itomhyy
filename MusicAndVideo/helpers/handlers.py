@@ -70,9 +70,7 @@ async def on_end_handler(_, update: Update):
         print(chat_id)
         op = await skip_current_song(chat_id)
         if op == 0:
-            await bot.send_message(
-                chat_id, "**Səsli söhbətdən ayrıldım🥲**"
-            )
+            await bot.send_message(chat_id, "**Səsli söhbətdən ayrıldım🥲**")
         else:
             await bot.send_message(
                 chat_id,

@@ -26,7 +26,9 @@ async def song(client, message: Message):
             "**Yanlış əmr.Zəhmət olmasa Yardım Menysunu yoxlayın!**",
         )
         return
-    pablo = await client.send_message(message.chat.id, f"🔎 `{urlissed}` ** adlı mahnını axtarıram...**")
+    pablo = await client.send_message(
+        message.chat.id, f"🔎 `{urlissed}` ** adlı mahnını axtarıram...**"
+    )
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
     mio = mi["search_result"]
@@ -236,11 +238,11 @@ def time_to_seconds(time):
 async def vsong(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(message.chat.id, f"🔎 `{urlissed}` **adlı videonu axtarıram...**")
+    pablo = await client.send_message(
+        message.chat.id, f"🔎 `{urlissed}` **adlı videonu axtarıram...**"
+    )
     if not urlissed:
-        await pablo.edit(
-            "Yanlış əmr.Yardım menyusunu yoxlayın!"
-        )
+        await pablo.edit("Yanlış əmr.Yardım menyusunu yoxlayın!")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)

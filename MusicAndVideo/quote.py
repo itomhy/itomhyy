@@ -42,7 +42,9 @@ def isArgInt(message: Message) -> bool:
 @capture_err
 async def quotly_func(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("**Stikerə çevirmək üçün hər hansı bir mesaja yanıt verin!**")
+        return await message.reply_text(
+            "**Stikerə çevirmək üçün hər hansı bir mesaja yanıt verin!**"
+        )
     if not message.reply_to_message.text:
         return await message.reply_text(
             "**Yanıt verdiyiniz mesajda, mətn yoxdur.Zəhmət olmasa mətn olan bir mesaja yanıt verin!**"
