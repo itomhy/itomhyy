@@ -21,6 +21,7 @@ _`Çoxlu funksiya`lara malik mükəmməl Userbot😍. !_
 /playlist, /siyahi | mahnı siyahısını açar.
 /skip | növbəti mahnıya keçər.
 /ping | işləmə vaxtı və bot statusunu göstərər.
+/restart | userbotu yenidən işə salar
 
 ### Heroku-ya Deployla👇
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yushkabotss/userbot2)
