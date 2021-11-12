@@ -17,7 +17,7 @@
             "description": "API ID yazın (@ApiInfobot -dan əldə edin)",
             "required": true
         },
-        "HNDLR": {
+        "PREFiKS": {
             "description": "Əmrlər üçün prefiks seçin (!,/)",
             "required": true,
             "value": "/"
