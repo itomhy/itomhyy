@@ -9,24 +9,24 @@
     ],
     "repository": "https://github.com/Yushkabotss/Userbot2",
     "env": {
-        "SESSION": {
+        "STRİNG SESSİON": {
             "description": "String Session yazın (@TG_StringGenBot -dan əldə edin) ",
-            "required": true
+            "vacib": true
         },
-        "API_ID": {
+        "API ID": {
             "description": "API ID yazın (@ApiInfobot -dan əldə edin)",
             "required": true
         },
-        "PREFiKS": {
+        "PREFİKS": {
             "description": "Əmrlər üçün prefiks seçin (!,/)",
             "required": true,
             "value": "/"
         },
-        "API_HASH": {
+        "API HASH": {
             "description": "API HASH yazın (@ApiInfobot -dan əldə edin)",
             "required": true
         },
-        "SUDO_USERS": {
+        "İSTİFADƏÇİ ID": {
             "description": "Telegram Hesabınızın ID-sini yazın (@MissRose_bot -a /id yazaraq əldə edin)",
             "required": true
         }
