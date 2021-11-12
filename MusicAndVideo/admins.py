@@ -17,7 +17,7 @@ async def skip(client, m: Message):
         if op == 0:
             await m.reply("**❌ Növbədə mahnı yoxdur!**")
         elif op == 1:
-            await m.reply("Səsli söhbətdən ayrıldım🥲**")
+            await m.reply("**Səsli söhbətdən ayrıldım🥲**")
         else:
             await m.reply(
                 f"**⏭ Keçid edildi** \n**🎵 Adı** - [{op[0]}]({op[1]}) | `{op[2]}`",
