@@ -11,7 +11,7 @@
     "env": {
         "STRİNG SESSİON": {
             "description": "String Session yazın (@TG_StringGenBot -dan əldə edin) ",
-            "vacib": true
+            "required": true
         },
         "API ID": {
             "description": "API ID yazın (@ApiInfobot -dan əldə edin)",
