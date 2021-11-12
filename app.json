@@ -1,33 +1,33 @@
 {
-    "name": "Music And Video Player UserBot",
-    "description": "Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.",
-    "logo": "https://telegra.ph/file/06d486e3996d3dd3afb43.jpg",
+    "name": "𓆩ᴅs𓆪 Mᴜsɪ́ᴄ♪ ",
+    "description": "Mükəmməl mahnı və video userbotu🎵🎥.",
+    "logo": "https://telegra.ph/file/81a9e1d0da4d570012592.jpg",
     "keywords": [
         "Telegram",
         "MusicPlayer",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/fjgaming212/Userbot-Music",
+    "repository": "https://github.com/Yushkabotss/Userbot2",
     "env": {
         "SESSION": {
-            "description": "Pyrogram String Session",
+            "description": "String Session yazın (@TG_StringGenBot -dan əldə edin) ",
             "required": true
         },
         "API_ID": {
-            "description": "Masukan APP ID Silahkan Ambil dari my.telegram.org/apps",
+            "description": "API ID yazın (@ApiInfobot -dan əldə edin)",
             "required": true
         },
         "HNDLR": {
-            "description": "ini akan digunakan sebagai prefix di semua perintah",
+            "description": "Əmrlər üçün prefiks seçin (!,/)",
             "required": true,
-            "value": "!"
+            "value": "/"
         },
         "API_HASH": {
-            "description": "Masukan API HASH Silahkan Ambil dari my.telegram.org/apps",
+            "description": "API HASH yazın (@ApiInfobot -dan əldə edin)",
             "required": true
         },
         "SUDO_USERS": {
-            "description": "Daftar User ID pengguna dihitung sebagai admin di semua tempat (pemisah menggunakan space)",
+            "description": "Telegram Hesabınızın ID-sini yazın (@MissRose_bot -a /id yazaraq əldə edin)",
             "required": true
         }
     },
