@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://telegra.ph/file/f08c541ed25816188a910.png" width="200" height="200">
+  <img src="https://telegra.ph/file/81a9e1d0da4d570012592.jpg" width="200" height="200">
 </p>
 
 # 𓆩ᴅs𓆪 Mᴜsɪ́ᴄ♪ Userbot
-_**Çoxlu funksiyalara malik mükəmməl Userbot😍. !**_
+_Çoxlu funksiyalara malik mükəmməl Userbot😍. !_
 
 ### Məlumat👇
 Əmrlər | Funksiya
