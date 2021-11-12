@@ -3,7 +3,7 @@
 </p>
 
 # 𓆩ᴅs𓆪 Mᴜsɪ́ᴄ♪ Userbot
-_Çoxlu funksiyalara malik mükəmməl Userbot😍. !_
+_`Çoxlu funksiya`lara malik mükəmməl Userbot😍. !_
 
 ### Məlumat👇
 Əmrlər | Funksiya
