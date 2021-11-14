@@ -68,8 +68,8 @@ async def song(client, message: Message):
     c_time = time.time()
     capy = f"""
 **🎵 Adı: [{thum}]({mo})**
-**👑 İstədi:** {message.from_user.mention}**
-**🚀 Yüklədi:** @Musicaxtar_bot**
+**👑 İstədi: {message.from_user.mention}**
+**🚀 Yüklədi: @Musicaxtar_bot**
 """
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
@@ -141,7 +141,7 @@ async def progress(current, total, message, start, type_of_ps, file_name=None):
         if file_name:
             try:
                 await message.edit(
-                    "{}\n**File Name:** `{}`\n{}".format(type_of_ps, file_name, tmp)
+                    "{}\n**Adı:** `{}`\n{}".format(type_of_ps, file_name, tmp)
                 )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -242,7 +242,7 @@ async def vsong(client, message: Message):
         message.chat.id, f"🔎 `{urlissed}` **adlı videonu axtarıram...**"
     )
     if not urlissed:
-        await pablo.edit("Yanlış əmr.Yardım menyusunu yoxlayın!")
+        await pablo.edit("**Adını yazın**!")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
