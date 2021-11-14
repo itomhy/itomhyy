@@ -63,7 +63,7 @@ async def restart(client, m: Message):
     quit()
 
 
-@Client.on_message(filters.command(["help"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["start"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
@@ -71,7 +71,7 @@ async def help(client, m: Message):
 
 🛠 Kömək menyusu👇
 
-⚡ PERINTAH UNTUK SEMUA ORANG
+⚡ **Bütün qrup üzvləri üçün**
 • {HNDLR}play [mahnı adı | link youtube | mahnı faylına yanıt] - mahnını səslidə oxudar
 • {HNDLR}vplay [video adı | link youtube | video faylına yanıt] - videonu səslidə göstərər 
 • {HNDLR}playlist və ya {HNDLR}siyahi siyahını göstərər 
@@ -82,11 +82,11 @@ async def help(client, m: Message):
 • {HNDLR}ses mətni səsə çevirər
 • {HNDLR}q və ya {HNDLR}stiker mətni Stikerə çevirər
 
-⚡ Yalnız adminlər👇
-• {HNDLR}resume - untuk melanjutkan pemutaran lagu atau video
-• {HNDLR}pause - untuk untuk menjeda pemutaran lagu atau video
-• {HNDLR}skip - untuk melewati lagu atau video
-• {HNDLR}end - untuk mengakhiri pemutaran</b>
+⚡ **Yalnız adminlər👇**
+• {HNDLR}resume - davam etdirər
+• {HNDLR}pause - dayandırar
+• {HNDLR}skip - növbətiyə keçər
+• {HNDLR}end - sonlandırar</b>
 """
     await m.reply(HELP)
 
