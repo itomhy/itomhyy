@@ -17,8 +17,8 @@ from config import HNDLR, bot, call_py
 from MusicAndVideo.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
-    "https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+    "https://telegra.ph/file/3c6dd03558c9979771bf0.jpg",
+    "https://telegra.ph/file/3c6dd03558c9979771bf0.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -116,7 +116,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+                    photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
 **Mahnı #{pos} növbədədir.
 🎵 Adı: [{songname}]({link})
@@ -136,7 +136,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+                    photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
@@ -233,7 +233,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+                    photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
 **#⃣ Video #{pos} növbədədir
 🎵 Adı: [{songname}]({link})
@@ -257,7 +257,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+                    photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
@@ -358,7 +358,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/04c7d5d5079a585491aff.jpg",
+                        photo="{IMAGE_THUMBNAIL}",
                         caption=f"""
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
