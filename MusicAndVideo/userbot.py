@@ -87,9 +87,8 @@ async def help(client, m: Message):
 • {HNDLR}pause - dayandırar
 • {HNDLR}skip - növbətiyə keçər
 • {HNDLR}end - sonlandırar
-
-⚠️ [Sahiblə əlaqə](buttonurl:https://t.me/Revan_Owner) 
-⚠️ [Rəsmi Kanal](buttonurl:https://t.me/RevaninBiosu)</b>
+⚠️ [Sahiblə əlaqə üçün toxun.](https://t.me/Revan_Owner) 
+⚠️ [Rəsmi Kanal](https://t.me/RevaninBiosu)</b>
 """
     await m.reply(HELP)
 
