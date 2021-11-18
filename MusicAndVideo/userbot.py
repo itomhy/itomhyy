@@ -71,7 +71,7 @@ async def help(client, m: Message):
 
 🛠 Kömək menyusu👇
 
-⚡ **Bütün qrup üzvləri üçün**
+⚡ **Bütün qrup üzvləri üçün👇**
 • {HNDLR}play [mahnı adı | link youtube | mahnı faylına yanıt] - mahnını səslidə oxudar
 • {HNDLR}vplay [video adı | link youtube | video faylına yanıt] - videonu səslidə göstərər 
 • {HNDLR}playlist və ya {HNDLR}siyahi siyahını göstərər 
@@ -86,7 +86,10 @@ async def help(client, m: Message):
 • {HNDLR}resume - davam etdirər
 • {HNDLR}pause - dayandırar
 • {HNDLR}skip - növbətiyə keçər
-• {HNDLR}end - sonlandırar</b>
+• {HNDLR}end - sonlandırar
+
+⚠️ [Sahiblə əlaqə](buttonurl:https://t.me/Revan_Owner) 
+⚠️ [Rəsmi Kanal](buttonurl:https://t.me/RevaninBiosu)</b>
 """
     await m.reply(HELP)
 
