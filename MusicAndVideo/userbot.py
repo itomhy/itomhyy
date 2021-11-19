@@ -11,11 +11,11 @@ from config import HNDLR, SUDO_USERS
 # System Uptime
 START_TIME = datetime.utcnow()
 TIME_DURATION_UNITS = (
-    ("Minggu", 60 * 60 * 24 * 7),
-    ("Hari", 60 * 60 * 24),
-    ("Jam", 60 * 60),
-    ("Menit", 60),
-    ("Detik", 1),
+    ("Bazar", 60 * 60 * 24 * 7),
+    ("Gün", 60 * 60 * 24),
+    ("Saat", 60 * 60),
+    ("Dəqiqə", 60),
+    ("İkinci", 1),
 )
 
 
@@ -49,16 +49,16 @@ async def ping(client, m: Message):
 )
 async def restart(client, m: Message):
     await m.delete()
-    loli = await m.reply("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `0%`")
-    await loli.edit("██▒▒▒▒▒▒▒▒▒▒▒▒▒▒ `20%`")
-    await loli.edit("████▒▒▒▒▒▒▒▒▒▒▒▒ `30%`")
-    await loli.edit("██████▒▒▒▒▒▒▒▒▒▒ `45%`")
-    await loli.edit("████████▒▒▒▒▒▒▒▒ `60%`")
-    await loli.edit("██████████▒▒▒▒▒▒ `70%`")
-    await loli.edit("████████████▒▒▒▒ `80%`")
-    await loli.edit("██████████████▒▒ `95%`")
-    await loli.edit("████████████████ `100%`")
-    await loli.edit("**✅ Userbot yenidən işə salındı...**")
+    loli = await m.reply("▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+    await loli.edit("██▒▒▒▒▒▒▒▒▒▒▒▒▒▒")
+    await loli.edit("████▒▒▒▒▒▒▒▒▒▒▒▒")
+    await loli.edit("██████▒▒▒▒▒▒▒▒▒▒")
+    await loli.edit("████████▒▒▒▒▒▒▒▒")
+    await loli.edit("██████████▒▒▒▒▒▒")
+    await loli.edit("████████████▒▒▒▒")
+    await loli.edit("██████████████▒▒")
+    await loli.edit("████████████████")
+    await loli.edit("**✅ Userbot yenidən işə salındı.Donmalar və xətalar düzəldildi🙂**")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
 
@@ -87,8 +87,8 @@ async def help(client, m: Message):
 • {HNDLR}pause - dayandırar
 • {HNDLR}skip - növbətiyə keçər
 • {HNDLR}end - sonlandırar
-⚠️ [Sahiblə əlaqə üçün toxun.](https://t.me/ABISHOV_27) 
-⚠️ [Rəsmi Kanal](https://t.me/YusifinBiosu)
+⚠️ [Sahiblə əlaqə üçün toxun.](https://t.me/Revan_Owner) 
+⚠️ [Rəsmi Kanal](https://t.me/RevanBots)
 
 Xoş istifadələr❤</b>
 """
