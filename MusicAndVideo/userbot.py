@@ -87,7 +87,7 @@ async def help(client, m: Message):
 • {HNDLR}pause - dayandırar
 • {HNDLR}skip - növbətiyə keçər
 • {HNDLR}end - sonlandırar
-⚠️ [Sahiblə əlaqə üçün toxun.](https://t.me/Revan_Owner) 
+⚠️ [Sahiblə əlaqə üçün toxun.](https://t.me/RevanOwner) 
 ⚠️ [Rəsmi Kanal](https://t.me/RevanBots)
 
 Xoş istifadələr❤</b>
