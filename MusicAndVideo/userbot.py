@@ -67,28 +67,38 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-👋 Salam {m.from_user.mention}!
+__Salam Aleykum__ **{m.from_user.mention}**.__Xoş Gəlmisən.!__
+__Bu gün sənə bot haqqında ətraflı məlumat verəcəm.
+Bot__ **15 Noyabr** __tarixində yaradılıb.Və hal hazırda__ **500+** __qrupda istifadə olunur.Hər gündə artmağa və təkmilləşməyə davam edir.__
 
-🛠 Kömək menyusu👇
+• **Bot Admin Hüquqları Olmadan İşləyə Bilir.
+• 4 Saniyə İçində Səsliyə Qoşularaq Mahnı Səsləndirir.
+• Mahnı və Video Yükləmə Qabiliyyətinə Malikdir.(Daha ətraflı aşağılarda👇)
+• Stiker, Mətni Səsə Çevirmə, ID görmə funksiyasına malikdir.
+• Reklamsızdır.
+• Sürətlidir.
+• Tam Təhlükəsizdir (Yetki olmadan işləyir)**
 
-⚡ **Bütün qrup üzvləri üçün👇**
-• {HNDLR}play [mahnı adı | link youtube | mahnı faylına yanıt] - mahnını səslidə oxudar
-• {HNDLR}vplay [video adı | link youtube | video faylına yanıt] - videonu səslidə göstərər 
-• {HNDLR}playlist və ya {HNDLR}siyahi siyahını göstərər 
-• {HNDLR}ping - bot statusu
-• {HNDLR}help - kömək
-• {HNDLR}song mahnı yükləyər
-• {HNDLR}vsong və ya {HNDLR}video video yükləyər
-• {HNDLR}ses mətni səsə çevirər
-• {HNDLR}q və ya {HNDLR}stiker mətni Stikerə çevirər
+__İndi isə yuxarıda sadaladığım funksiyalar necə işlətmək olar, o haqda məlumat verim.__
 
-⚡ **Yalnız adminlər👇**
-• {HNDLR}resume - davam etdirər
-• {HNDLR}pause - dayandırar
-• {HNDLR}skip - növbətiyə keçər
-• {HNDLR}end - sonlandırar
+• **/play "mahnı adı"** - __Adını yazdığınız mahnını Səsli Söhbətdə oxudar.__
+• **/vplay "video, kino adı"**  - __Adını yazdığınız Videonu, Filmi Səsli Söhbətdə göstərər.__
+• **/pause** -  __Səslidə oxunan mahnını Pauza (dayandırar və davam etdirmək mümükündür) edər.__
+• **/resume** -  __Pauza edilmiş mahnını davam etdirər.__
+• **/playlist** -  __Növbədə olan mahnı siyahısını göstərər.__
+• **/skip** -  __Növbədə olan mahnıya keçid edər.__
+• **/end** -  __Mahnını sonlandırar.__
+• **/song "mahnı adı"**  - __Adını yazdığınız mahnını yüksək keyfiyyətlə yükləyər.__
+• **/video "video adı"**  - __Adını yazdığınız videonu yüksək keyfiyyətlə yükləyər.__
+• **/ses**  - __Yanıt verdiyiniz mesajı Səsə çevirər.__
+• **/q və ya /stiker**  - __Yanıt verdiyiniz mesajı Stikerə çevirər.__
+• **/id**  - __yanıt verdiyiniz şəxsin ID göstər.__
 
-[👤Sahiblə əlaqə👤](https://t.me/ABISHOV_27) 
+✨ __Yaxın zamanda Radio, Canlı Yayım və s. Funksiyalarda əlavə olunacaq.__
+
+__Digər botlar__: **@YusifinBiosu**
+
+• **Xoş İstifadələr❤**
 """
     await m.reply(HELP)
 
