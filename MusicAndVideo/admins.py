@@ -17,7 +17,7 @@ async def skip(client, m: Message):
         if op == 0:
             await m.reply("**❌ Növbədə mahnı yoxdur!**")
         elif op == 1:
-            await m.reply("**Səsli söhbətdən ayrıldım🥲**")
+            await m.reply("**Növbədə mahnı olmadığı üçün Səsli Söhbətdən ayrıldım🙂**")
         else:
             await m.reply(
                 f"**⏭ Keçid edildi** \n**🎵 Adı** - [{op[0]}]({op[1]}) | `{op[2]}`",
@@ -50,11 +50,11 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("**✅ Sonlandırıldı**")
+            await m.reply("**✅ Oxutma sonlandırıldı.Təşəkkürlər❤**")
         except Exception as e:
             await m.reply(f"**Xəta** \n`{e}`")
     else:
-        await m.reply("**❌ Heçnə oxumur!**")
+        await m.reply("**❌ Hal-hazırda Səsli Söhbətdə oxunan mahnı yoxdur!**")
 
 
 @Client.on_message(filters.command(["pause"], prefixes=f"{HNDLR}"))
@@ -71,7 +71,7 @@ async def pause(client, m: Message):
         except Exception as e:
             await m.reply(f"**Xəta** \n`{e}`")
     else:
-        await m.reply("** ❌ Heçnə oxumur!**")
+        await m.reply("** ❌ Hal-hazırda Səsli Söhbətdə oxunan mahnı yoxdur!**")
 
 
 @Client.on_message(filters.command(["resume"], prefixes=f"{HNDLR}"))
@@ -88,4 +88,4 @@ async def resume(client, m: Message):
         except Exception as e:
             await m.reply(f"**Xəta** \n`{e}`")
     else:
-        await m.reply("**❌ Heçnə oxumur!**")
+        await m.reply("**❌ Hal-hazırda Səsli Söhbətdə oxunan mahnı yoxdur!**")
