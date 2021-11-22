@@ -68,7 +68,8 @@ async def song(client, message: Message):
     c_time = time.time()
     capy = f"""
 **🎵 Adı: [{thum}]({mo})**
-**👑 İstədi: {message.from_user.mention}**
+**👑 İstədi: {message.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
@@ -241,7 +242,7 @@ async def vsong(client, message: Message):
         message.chat.id, f"🔎 `{urlissed}` **adlı videonu axtarıram...**"
     )
     if not urlissed:
-        await pablo.edit("**Adını yazın**!")
+        await pablo.edit("**Video adını yazın**!")
         return
 
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -277,7 +278,8 @@ async def vsong(client, message: Message):
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
 **🎥 Adı:** [{thum}]({mo})**
-**👑 İstədi: {message.from_user.mention}**
+**👑 İstədi: {message.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """
     await client.send_video(
         message.chat.id,
