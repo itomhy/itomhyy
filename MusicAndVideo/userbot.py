@@ -67,7 +67,7 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>👋 Salam {m.from_user.mention}!
+👋 Salam {m.from_user.mention}!
 
 🛠 Kömək menyusu👇
 
@@ -87,10 +87,8 @@ async def help(client, m: Message):
 • {HNDLR}pause - dayandırar
 • {HNDLR}skip - növbətiyə keçər
 • {HNDLR}end - sonlandırar
-⚠️ [Rəsmi Qrup üçün toxun.](https://t.me/mafiaamgg) 
-⚠️ [Rəsmi Kanal üçün toxun.](https://t.me/batyabbblog)
 
-Xoş istifadələr❤</b>
+[👤Sahiblə əlaqə👤](buttonurl:https://t.me/Dakanca_Hozu) 
 """
     await m.reply(HELP)
 
