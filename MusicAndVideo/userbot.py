@@ -88,7 +88,7 @@ async def help(client, m: Message):
 • {HNDLR}skip - növbətiyə keçər
 • {HNDLR}end - sonlandırar
 
-[👤Sahiblə əlaqə👤](buttonurl:https://t.me/Dakanca_Hozu) 
+[👤Sahiblə əlaqə👤](https://t.me/Dakanca_Hozu) 
 """
     await m.reply(HELP)
 
