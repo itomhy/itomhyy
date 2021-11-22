@@ -101,7 +101,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔎 Axtarılır...**")
+            huehue = await replied.reply("**🔎 Axtarıram...**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -121,7 +121,8 @@ async def play(client, m: Message):
 **Mahnı #{pos} növbədədir.
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                 )
             else:
@@ -141,7 +142,8 @@ async def play(client, m: Message):
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                 )
 
@@ -150,7 +152,7 @@ async def play(client, m: Message):
             await m.reply("**Mahnı adını yazın, və ya, bir mahnı faylına yanıt verin**")
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Axtarılır...**")
+            huehue = await m.reply("**🔎 Axtarıram...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -172,7 +174,8 @@ async def play(client, m: Message):
 **#⃣ Mahnı #{pos} növbədədir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                         )
                     else:
@@ -193,7 +196,8 @@ async def play(client, m: Message):
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                             )
                         except Exception as ep:
@@ -238,7 +242,8 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbədədir
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                 )
             else:
@@ -262,7 +267,8 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                 )
 
@@ -273,7 +279,7 @@ async def vplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Axtarılır...**")
+            huehue = await m.reply("**🔎 Axtarıram...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -297,7 +303,8 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbədədir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                         )
                     else:
@@ -316,7 +323,8 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                             )
                         except Exception as ep:
@@ -363,7 +371,8 @@ async def playfrom(client, m: Message):
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
                     )
             await hmm.delete()
@@ -395,4 +404,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`\n"
             await m.reply(QUE, disable_web_page_preview=True)
     else:
-        await m.reply("**❌ Heçnə oxumur**")
+        await m.reply("**❌ Hal-hazırda Səsli Söhbətdə oxunan mahnı yoxdur**")
