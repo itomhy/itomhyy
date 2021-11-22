@@ -212,7 +212,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔎 Axtarılır...**")
+            huehue = await replied.reply("**🔎 Axtarıram...**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -285,7 +285,7 @@ async def vplay(client, m: Message):
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
-                await huehue.edit("**Axtardığınız videonu tapa bilmədim🥲**")
+                await huehue.edit("**İstədiyiniz videonu tapa bilmədim🥲**")
             else:
                 songname = search[0]
                 url = search[1]
