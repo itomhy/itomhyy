@@ -118,9 +118,9 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
-**Mahnı #{pos} növbədədir.
+**Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -141,7 +141,7 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -171,9 +171,9 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**#⃣ Mahnı #{pos} növbədədir
+**#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -195,7 +195,7 @@ async def play(client, m: Message):
                                 caption=f"""
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -239,9 +239,9 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="{IMAGE_THUMBNAIL}",
                     caption=f"""
-**#⃣ Video #{pos} növbədədir
+**#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -266,7 +266,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -300,9 +300,9 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**#⃣ Video #{pos} növbədədir
+**#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -322,7 +322,7 @@ async def vplay(client, m: Message):
                                 caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
@@ -370,7 +370,7 @@ async def playfrom(client, m: Message):
                         caption=f"""
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat}
 👑 İstədi: {m.from_user.mention}
 ❤ Əlavə məlumat: @DSmusiqiKanal**
 """,
