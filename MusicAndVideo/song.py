@@ -69,7 +69,6 @@ async def song(client, message: Message):
     capy = f"""
 **🎵 Adı: [{thum}]({mo})**
 **👑 İstədi: {message.from_user.mention}**
-**🚀 Yüklədi: @Musicaxtar_bot**
 """
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
@@ -278,7 +277,7 @@ async def vsong(client, message: Message):
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""
 **🎥 Adı:** [{thum}]({mo})**
-**👑 İstədi:** {message.from_user.mention}**
+**👑 İstədi: {message.from_user.mention}**
 """
     await client.send_video(
         message.chat.id,
