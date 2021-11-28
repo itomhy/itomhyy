@@ -121,8 +121,7 @@ async def play(client, m: Message):
 **Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                 )
             else:
@@ -142,8 +141,7 @@ async def play(client, m: Message):
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                 )
 
@@ -174,8 +172,7 @@ async def play(client, m: Message):
 **#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -196,8 +193,7 @@ async def play(client, m: Message):
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -242,8 +238,7 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                 )
             else:
@@ -267,8 +262,7 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                 )
 
@@ -303,8 +297,7 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -323,8 +316,7 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -371,8 +363,7 @@ async def playfrom(client, m: Message):
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
 💬 Qrup ID: {chat_id}
-👑 İstədi: {m.from_user.mention}
-❤ Əlavə məlumat: @DSmusiqiKanal**
+👑 İstədi: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
