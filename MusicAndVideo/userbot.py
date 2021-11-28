@@ -96,8 +96,8 @@ __İndi isə yuxarıda sadaladığım funksiyalar necə işlətmək olar, o haqd
 
 ✨ __Yaxın zamanda Radio, Canlı Yayım və s. Funksiyalarda əlavə olunacaq.__
 
-__Qrupumuz__: **@MDsohbet**
-__Sahib__: **@RevanOwner**
+__Kanal__: **@YusifinBiosu**
+__Sahib__: **@ABISHOV_27**
 
 • **Xoş İstifadələr❤**
 """
