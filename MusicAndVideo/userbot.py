@@ -96,7 +96,8 @@ __İndi isə yuxarıda sadaladığım funksiyalar necə işlətmək olar, o haqd
 
 ✨ __Yaxın zamanda Radio, Canlı Yayım və s. Funksiyalarda əlavə olunacaq.__
 
-__Digər botlar__: **@YusifinBiosu**
+__Qrupumuz__: **@MDsohbet**
+__Sahib__: **@RevanOwner**
 
 • **Xoş İstifadələr❤**
 """
