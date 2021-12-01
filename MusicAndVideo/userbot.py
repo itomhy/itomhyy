@@ -67,9 +67,7 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-__Salam Aleykum__ **{m.from_user.mention}**.__Xoş Gəlmisən.!__
-__Bu gün sənə bot haqqında ətraflı məlumat verəcəm.
-Bot__ **15 Noyabr** __tarixində yaradılıb.Və hal hazırda__ **500+** __qrupda istifadə olunur.Hər gündə artmağa və təkmilləşməyə davam edir.__
+**Salam👋 {m.from_user.mention}**
 
 • **Bot Admin Hüquqları Olmadan İşləyə Bilir.
 • 4 Saniyə İçində Səsliyə Qoşularaq Mahnı Səsləndirir.
