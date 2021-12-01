@@ -120,8 +120,8 @@ async def play(client, m: Message):
                     caption=f"""
 **Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                 )
             else:
@@ -140,8 +140,8 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                 )
 
@@ -171,8 +171,8 @@ async def play(client, m: Message):
                             caption=f"""
 **#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                         )
                     else:
@@ -192,8 +192,8 @@ async def play(client, m: Message):
                                 caption=f"""
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                             )
                         except Exception as ep:
@@ -237,8 +237,8 @@ async def vplay(client, m: Message):
                     caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                 )
             else:
@@ -261,8 +261,8 @@ async def vplay(client, m: Message):
                     caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                 )
 
@@ -296,8 +296,8 @@ async def vplay(client, m: Message):
                             caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                         )
                     else:
@@ -315,8 +315,8 @@ async def vplay(client, m: Message):
                                 caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                             )
                         except Exception as ep:
@@ -362,8 +362,8 @@ async def playfrom(client, m: Message):
                         caption=f"""
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat.title}
-👑 İstədi: {m.from_user.mention}**
+👑 İstədi: {m.from_user.mention}
+⭕ Kömək üçün /komek**
 """,
                     )
             await hmm.delete()
