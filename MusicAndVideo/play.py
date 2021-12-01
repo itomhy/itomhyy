@@ -120,7 +120,7 @@ async def play(client, m: Message):
                     caption=f"""
 **Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                 )
@@ -140,7 +140,7 @@ async def play(client, m: Message):
                     caption=f"""
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                 )
@@ -171,7 +171,7 @@ async def play(client, m: Message):
                             caption=f"""
 **#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                         )
@@ -192,7 +192,7 @@ async def play(client, m: Message):
                                 caption=f"""
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                             )
@@ -237,7 +237,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                 )
@@ -261,7 +261,7 @@ async def vplay(client, m: Message):
                     caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                 )
@@ -296,7 +296,7 @@ async def vplay(client, m: Message):
                             caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                         )
@@ -315,7 +315,7 @@ async def vplay(client, m: Message):
                                 caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                             )
@@ -362,7 +362,7 @@ async def playfrom(client, m: Message):
                         caption=f"""
 **▶ {chat}dan seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
-💬 Qrup ID: {chat_id}
+💬 Qrup ID: {chat.title}
 👑 İstədi: {m.from_user.mention}**
 """,
                     )
@@ -386,7 +386,7 @@ async def playlist(client, m: Message):
                 disable_web_page_preview=True,
             )
         else:
-            QUE = f"**🎵 İndi oxunur:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ DAFTAR ANTRIAN:**"
+            QUE = f"**🎵 İndi oxunur:** \n[{chat_queue[0][0]}]({chat_queue[0][2]}) | `{chat_queue[0][3]}` \n\n**⏯ NÖVBƏ SİYAHISI:**"
             l = len(chat_queue)
             for x in range(1, l):
                 hmm = chat_queue[x][0]
