@@ -338,7 +338,9 @@ async def playfrom(client, m: Message):
             limit = 10
             lmt = 9
         await m.delete()
-        hmm = await m.reply(f"🔎 {chat} -dən {limit} təsadüfi mahnı bota əlavə olunur...**")
+        hmm = await m.reply(
+            f"🔎 {chat} -dən {limit} təsadüfi mahnı bota əlavə olunur...**"
+        )
         try:
             async for x in bot.search_messages(chat, limit=limit, filter="audio"):
                 location = await x.download()
