@@ -72,12 +72,12 @@ async def help(client, m: Message):
 • **Bot Admin Hüquqları Olmadan İşləyə Bilir.
 • 4 Saniyə İçində Səsliyə Qoşularaq Mahnı Səsləndirir.
 • Mahnı və Video Yükləmə Qabiliyyətinə Malikdir.(Daha ətraflı aşağılarda👇)
-• Stiker, Mətni Səsə Çevirmə, ID görmə funksiyasına malikdir.
+• Stiker, Mətni Səsə Çevirmə funksiyasına malikdir.
 • Reklamsızdır.
 • Sürətlidir.
 • Tam Təhlükəsizdir (Yetki olmadan işləyir)**
 
-__İndi isə yuxarıda sadaladığım funksiyalar necə işlətmək olar, o haqda məlumat verim.__
+✨✨✨
 
 • **/play "mahnı adı"** - __Adını yazdığınız mahnını Səsli Söhbətdə oxudar.__
 • **/vplay "video, kino adı"**  - __Adını yazdığınız Videonu, Filmi Səsli Söhbətdə göstərər.__
@@ -86,13 +86,13 @@ __İndi isə yuxarıda sadaladığım funksiyalar necə işlətmək olar, o haqd
 • **/playlist** -  __Növbədə olan mahnı siyahısını göstərər.__
 • **/skip** -  __Növbədə olan mahnıya keçid edər.__
 • **/end** -  __Mahnını sonlandırar.__
+• **/kanal "kanal tağı" - __Seçdiyiniz kanaldan təsadüfi 10 mahnı yükləyərək Səslidə oxudar.__
 • **/song "mahnı adı"**  - __Adını yazdığınız mahnını yüksək keyfiyyətlə yükləyər.__
 • **/video "video adı"**  - __Adını yazdığınız videonu yüksək keyfiyyətlə yükləyər.__
 • **/ses**  - __Yanıt verdiyiniz mesajı Səsə çevirər.__
 • **/q və ya /stiker**  - __Yanıt verdiyiniz mesajı Stikerə çevirər.__
-• **/id**  - __yanıt verdiyiniz şəxsin ID göstər.__
 
-✨ __Yaxın zamanda Radio, Canlı Yayım və s. Funksiyalarda əlavə olunacaq.__
+🇦🇿 __Yaxın zamanda Radio, Canlı Yayım və s. Funksiyalarda əlavə olunacaq.__
 
 __Kanal__: **@YusifinBiosu**
 __Sahib__: **@ABISHOV_27**
