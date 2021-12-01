@@ -116,7 +116,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="{IMAGE_THUMBNAIL}",
+                    photo="https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                     caption=f"""
 **Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
@@ -136,7 +136,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="{IMAGE_THUMBNAIL}",
+                    photo="https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                     caption=f"""
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
@@ -167,7 +167,7 @@ async def play(client, m: Message):
                         await huehue.delete()
                         # await m.reply_to_message.delete()
                         await m.reply_photo(
-                            photo=f"{IMAGE_THUMBNAIL}",
+                            photo=f"https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                             caption=f"""
 **#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
@@ -188,7 +188,7 @@ async def play(client, m: Message):
                             await huehue.delete()
                             # await m.reply_to_message.delete()
                             await m.reply_photo(
-                                photo=f"{IMAGE_THUMBNAIL}",
+                                photo=f"https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                                 caption=f"""
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
@@ -233,7 +233,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="{IMAGE_THUMBNAIL}",
+                    photo="https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                     caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
@@ -257,7 +257,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="{IMAGE_THUMBNAIL}",
+                    photo="https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                     caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
@@ -292,7 +292,7 @@ async def vplay(client, m: Message):
                         await huehue.delete()
                         # await m.reply_to_message.delete()
                         await m.reply_photo(
-                            photo=f"{IMAGE_THUMBNAIL}",
+                            photo=f"https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                             caption=f"""
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
@@ -311,7 +311,7 @@ async def vplay(client, m: Message):
                             await huehue.delete()
                             # await m.reply_to_message.delete()
                             await m.reply_photo(
-                                photo=f"{IMAGE_THUMBNAIL}",
+                                photo=f"https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                                 caption=f"""
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
@@ -360,7 +360,7 @@ async def playfrom(client, m: Message):
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     # await m.reply_to_message.delete()
                     await m.reply_photo(
-                        photo="{IMAGE_THUMBNAIL}",
+                        photo="https://telegra.ph/file/34d9b940ac2e1efd32b1c.jpg",
                         caption=f"""
 **❤ {chat} -dən seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
