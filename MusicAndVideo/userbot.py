@@ -63,7 +63,7 @@ async def restart(client, m: Message):
     quit()
 
 
-@Client.on_message(filters.command(["komek"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["start"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
