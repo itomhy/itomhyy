@@ -121,7 +121,7 @@ async def play(client, m: Message):
 **Mahnı #{pos} növbəyə əlavə olundu.
 🎵 Adı: [{songname}]({link})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Mahnı oxumursa👉 /end**
 """,
                 )
             else:
@@ -141,7 +141,7 @@ async def play(client, m: Message):
 **▶ Mahnı səslənir
 🎵 Adı: [{songname}]({link})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Mahnı oxumursa👉 /end**
 """,
                 )
 
@@ -172,7 +172,7 @@ async def play(client, m: Message):
 **#⃣ Mahnı #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Mahnı oxumursa👉 /end**
 """,
                         )
                     else:
@@ -193,7 +193,7 @@ async def play(client, m: Message):
 **▶ Mahnı səsləndirilir
 🎵 Adı: [{songname}]({url})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Mahnı oxumursa👉 /end**
 """,
                             )
                         except Exception as ep:
@@ -238,7 +238,7 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({link})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Video oxumursa👉 /end**
 """,
                 )
             else:
@@ -262,7 +262,7 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({link})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Video oxumursa👉 /end**
 """,
                 )
 
@@ -297,7 +297,7 @@ async def vplay(client, m: Message):
 **#⃣ Video #{pos} növbəyə əlavə olundu
 🎵 Adı: [{songname}]({url})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Video oxumursa👉 /end**
 """,
                         )
                     else:
@@ -316,7 +316,7 @@ async def vplay(client, m: Message):
 **▶ Video göstərilir
 🎵 Adı: [{songname}]({url})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Video oxumursa👉 /end**
 """,
                             )
                         except Exception as ep:
@@ -365,7 +365,7 @@ async def playfrom(client, m: Message):
 **❤ {chat} -dən seçilən mahnılar oxunur
 🎵 Adı: [{songname}]({link})
 👑 İstədi: {m.from_user.mention}
-⭕ Kömək üçün /komek**
+⭕ Mahnı oxumursa👉 /end**
 """,
                     )
             await hmm.delete()
