@@ -38,18 +38,16 @@ def isArgInt(message: Message) -> bool:
         return [False, 0]
 
 
-@Client.on_message(filters.command(["q", "stiker"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["q", "quote"], prefixes=f"{HNDLR}"))
 @capture_err
 async def quotly_func(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text(
-            "**Stikerə çevirmək üçün hər hansı bir mesaja yanıt verin!**"
-        )
+        return await message.reply_text("Membalas Pesan Untuk Mengutipnya !")
     if not message.reply_to_message.text:
         return await message.reply_text(
-            "**Yanıt verdiyiniz mesajda, mətn yoxdur.Zəhmət olmasa mətn olan bir mesaja yanıt verin!**"
+            "Pesan yang Dibalas tidak memiliki teks apa pun! Tolong Balas Pesan Teks !"
         )
-    m = await message.reply_text("**Stikerə çevrilir...**")
+    m = await message.reply_text("`Membuat kutipan Pesan...`")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
 
@@ -57,7 +55,7 @@ async def quotly_func(client, message: Message):
         arg = isArgInt(message)
         if arg[0]:
             if arg[1] < 2 or arg[1] > 10:
-                return await m.edit("Arqument 2-10 arası olmalıdır.")
+                return await m.edit("Argumen harus antara 2-10.")
             count = arg[1]
             messages = await client.get_messages(
                 message.chat.id,
@@ -93,9 +91,9 @@ async def quotly_func(client, message: Message):
         sticker.close()
     except Exception as e:
         await m.edit(
-            "Mesajı sitat gətirərkən xəta baş verdi"
-            + " Bu səhv adətən mövcud olduqda baş verir "
-            + " mətndən başqa bir şey ehtiva edən mesajlar."
+            "Ada yang salah saat mengutip pesan, bisa"
+            + " Kesalahan ini biasanya terjadi ketika ada "
+            + " pesan yang berisi sesuatu selain teks."
         )
         e = format_exc()
         print(e)
