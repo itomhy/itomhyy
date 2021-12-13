@@ -44,9 +44,7 @@ async def quotly_func(client, message: Message):
     if not message.reply_to_message:
         return await message.reply_text("**Sitat gətirmək üçün mesaja cavab verin !**")
     if not message.reply_to_message.text:
-        return await message.reply_text(
-            "**Yanıt verdiyiniz mesajda Mətn yoxdur**"
-        )
+        return await message.reply_text("**Yanıt verdiyiniz mesajda Mətn yoxdur**")
     m = await message.reply_text("**Stikerə çevirirəm...**")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
@@ -91,9 +89,7 @@ async def quotly_func(client, message: Message):
         sticker.close()
     except Exception as e:
         await m.edit(
-            "Xəta..."
-            + " Mahnı dinləmək üçün /play "
-            + " Mahnı yükləmək üçün /song."
+            "Xəta..." + " Mahnı dinləmək üçün /play " + " Mahnı yükləmək üçün /song."
         )
         e = format_exc()
         print(e)
