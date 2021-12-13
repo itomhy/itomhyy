@@ -9,7 +9,7 @@ from Python_ARQ import ARQ
 from config import HNDLR
 from MusicAndVideo.helpers.merrors import capture_err
 
-ARQ_API_KEY = "KYTPMA-MPFWHT-PREQWH-BYBVWG-ARQ"
+ARQ_API_KEY = "GQQTDZ-FLUOCO-CMETSI-MFLUWF-ARQ"
 aiohttpsession = aiohttp.ClientSession()
 arq = ARQ("https://thearq.tech", ARQ_API_KEY, aiohttpsession)
 
@@ -42,12 +42,12 @@ def isArgInt(message: Message) -> bool:
 @capture_err
 async def quotly_func(client, message: Message):
     if not message.reply_to_message:
-        return await message.reply_text("Membalas Pesan Untuk Mengutipnya !")
+        return await message.reply_text("**Sitat gətirmək üçün mesaja cavab verin !**")
     if not message.reply_to_message.text:
         return await message.reply_text(
-            "Pesan yang Dibalas tidak memiliki teks apa pun! Tolong Balas Pesan Teks !"
+            "**Yanıt verdiyiniz mesajda Mətn yoxdur**"
         )
-    m = await message.reply_text("`Membuat kutipan Pesan...`")
+    m = await message.reply_text("**Stikerə çevirirəm...**")
     if len(message.command) < 2:
         messages = [message.reply_to_message]
 
@@ -55,7 +55,7 @@ async def quotly_func(client, message: Message):
         arg = isArgInt(message)
         if arg[0]:
             if arg[1] < 2 or arg[1] > 10:
-                return await m.edit("Argumen harus antara 2-10.")
+                return await m.edit("**Argument 2-10 arası olmalıdır.**")
             count = arg[1]
             messages = await client.get_messages(
                 message.chat.id,
@@ -91,9 +91,9 @@ async def quotly_func(client, message: Message):
         sticker.close()
     except Exception as e:
         await m.edit(
-            "Ada yang salah saat mengutip pesan, bisa"
-            + " Kesalahan ini biasanya terjadi ketika ada "
-            + " pesan yang berisi sesuatu selain teks."
+            "Xəta..."
+            + " Mahnı dinləmək üçün /play "
+            + " Mahnı yükləmək üçün /song."
         )
         e = format_exc()
         print(e)
